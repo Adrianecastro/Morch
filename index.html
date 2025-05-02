@@ -96,7 +96,75 @@
     margin: 0 auto;
     justify-content: center;
 }
-</style></head>
+</style><style>
+/* Magnific Popup zoom animation */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.zoom-anim-dialog {
+  position: relative;
+  margin: 0 auto;
+}
+</style><style>
+.zoom-anim-dialog h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.zoom-anim-dialog p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+    margin-top: 0;
+    white-space: pre-line;
+}
+</style><style>
+.zoom-anim-dialog h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.zoom-anim-dialog p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+    margin-top: 0;
+}
+.zoom-anim-dialog p strong {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000;
+    display: inline-block;
+    margin-top: 1rem;
+}
+</style><style>
+#demo a:hover {
+    text-decoration: none !important;
+}
+</style><link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/></head>
 <body>
 <main class="container-fluid">
 <div class="row">
@@ -135,37 +203,35 @@
 </li>
 <li class="nav-item">
 <a class="nav-link" href="#talk">
-<span class="d-inline-block mr-3">Comunicate con nosotros</span>
+<span class="d-inline-block mr-3">DEMO</span>
 <span class="d-inline-block tm-white-rect"></span>
 </a>
 </li>
 </ul>
-
 <footer class="text-center text-white small">
 <p class="mb--0 mb-2">Copyright 2025</p>
 <p class="mb--0 mb-2">Morch srl</p>
-
 </footer>
 </div>
 <div class="text-center mt-4"><img alt="Data Fiscal" src="img/fiscal.png" style="max-width: 80px;"/></div></nav>
 <main class="ml-sm-auto col-12" role="main">
 <div class="parallax-window" data-image-src="img/dream-pulse-header.jpg" data-parallax="scroll">
-<div class="tm-section-wrap">
+<div class="tm-section-wrap" style="margin-bottom: 160px;">
 <section class="tm-section" id="intro">
 <div class="tm-bg-white-transparent tm-intro">
 <div style="margin-top: 30px; padding: 20px; border: 1px solid #ddd; border-radius: 8px; display: flex; flex-direction: column; align-items: center;"><img src="img/logo_crown_tech.png" style="max-width: 120px; display: block; margin-top: 20px;"/><h3 style="color: black; margin: 15px 0 5px 0; font-weight: 600;">Sistemas MONARK</h3><p class="tm-color-gray" style="max-width: 480px;">Monark es el sistema contable desarrollado por Morch. Ofrece una solución poderosa, flexible y moderna para la gestión de empresas, adaptándose a distintas industrias con un diseño técnico y evolutivo.</p></div></div>
 </section>
 </div>
 </div>
-<div class="tm-section-wrap bg-white">
-<section class="row tm-section" id="Sistemas">
-<div class="row w-100 justify-content-center text-center"></div><div class="row w-100 justify-content-center text-center"><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-facturacion" href="#modal-facturacion"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-file-invoice fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Facturación</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-reportes" href="#modal-reportes"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-chart-line fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Balances y Reportes</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-pos" href="#modal-pos"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-cash-register fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">POS (Punto de Venta)</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-cuentas" href="#modal-cuentas"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-users fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Cuentas Corrientes</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-tesoreria" href="#modal-tesoreria"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-sack-dollar fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Tesorería</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-compras" href="#modal-compras"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-cart-shopping fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Compras</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-produccion" href="#modal-produccion"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-industry fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Producción</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup" data-mfp-src="#modal-estadisticas" href="#modal-estadisticas"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-chart-pie fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Estadísticas</h4></div></a></div></div></section>
+<div class="tm-section-wrap bg-white" style="margin-bottom: 160px;">
+<section class="row tm-section" data-aos="fade-left" data-aos-duration="3000" id="Sistemas">
+<div class="row w-100 justify-content-center text-center"></div><div class="row w-100 justify-content-center text-center"><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-droguerias" href="#modal-droguerias"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-prescription-bottle-medical fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Droguerías</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-reportes" href="#modal-reportes"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-chart-line fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Balances y Reportes</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-pos" href="#modal-pos"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-cash-register fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">POS (Punto de Venta)</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-cuentas" href="#modal-cuentas"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-users fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Cuentas Corrientes</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-franquicias" href="#modal-franquicias"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-store fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Franquicias y Sucursales</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-compras" href="#modal-compras"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-cart-shopping fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Compras</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-produccion" href="#modal-produccion"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-industry fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Producción</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="modulo-popup popup-with-zoom-anim" data-mfp-src="#modal-estadisticas" href="#modal-estadisticas"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-chart-pie fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Estadísticas</h4></div></a></div></div></section>
 </div>
-<div class="tm-section-wrap bg-white">
-<section class="row tm-section" id="work"><div class="row align-items-center"><div class="col-lg-6 mb-4 mb-lg-0"><img alt="Partner Monark" class="img-fluid rounded" src="img/partner.jpg"/></div><div class="col-lg-6"><h2 class="tm-color-primary tm-section-title mb-4">Sé nuestro partner</h2><p>Conviértete en partner del sistema Monark y accedé a oportunidades exclusivas. Presentá la solución a nuevos clientes dentro de rubros específicos, expandiendo tu red comercial con una herramienta contable moderna, flexible y robusta. Nuestro programa de partners está diseñado para integradores, asesores y expertos que buscan sumar valor y generar ingresos adicionales.</p></div></div></section>
+<div class="tm-section-wrap bg-white" style="margin-bottom: 160px;">
+<section class="row tm-section" data-aos="fade-left" data-aos-duration="3000" id="work"><div class="row align-items-center"><div class="col-lg-6 mb-4 mb-lg-0"><img alt="Partner Monark" class="img-fluid rounded" src="img/partner.jpg"/></div><div class="col-lg-6"><h2 class="tm-color-primary tm-section-title mb-4">Sé nuestro partner</h2><p>Conviértete en partner del sistema Monark y accedé a oportunidades exclusivas. Presentá la solución a nuevos clientes dentro de rubros específicos, expandiendo tu red comercial con una herramienta contable moderna, flexible y robusta. Nuestro programa de partners está diseñado para integradores, asesores y expertos que buscan sumar valor y generar ingresos adicionales.</p></div></div></section>
 </div>
-<div class="tm-section-wrap bg-white">
-<section class="row tm-section" id="clients">
+<div class="tm-section-wrap bg-white" style="margin-bottom: 160px;">
+<section class="row tm-section" data-aos="fade-left" data-aos-duration="3000" id="clients">
 <div class="col-12 tm-section-pad">
 <div class="tm-flex-item-left">
 <div class="tm-w-80">
@@ -219,39 +285,11 @@
 </div>
 </section>
 </div>
-<div class="tm-section-wrap bg-white">
-<section class="row tm-section" id="talk">
-<div class="col-xl-6 mb-5">
-<div class="tm-double-border-1 tm-border-gray">
-<div class="tm-double-border-2 tm-border-gray tm-box-pad">
-<h2 class="tm-color-primary tm-section-title mb-4">Solicita una demo</h2>
-<p class="mb-4">
-                         Solicita una demo gratuita para conocer todos los sistemas 
-                        </p>
-</div>
-</div>
-</div>
-<div class="col-xl-6 mb-5">
-<div class="tm-contact-form-wrap">
-<form action="" class="tm-contact-form" method="POST">
-<div class="form-group">
-<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" id="contact_name" name="contact_name" placeholder="Your Name" required="" type="text"/>
-</div>
-<div class="form-group">
-<input class="form-control rounded-0 border-top-0 border-right-0 border-left-0" id="contact_email" name="contact_email" placeholder="Your Email" required="" type="email"/>
-</div>
-<div class="form-group">
-<textarea class="form-control rounded-0 border-top-0 border-right-0 border-left-0" id="contact_message" name="contact_message" placeholder="Message..." required="" rows="4"></textarea>
-</div>
-<div class="form-group mb-0">
-<button class="btn rounded-0 d-block ml-auto tm-btn-primary" type="submit">
-                            SEND
-                          </button>
-</div>
-</form>
-</div>
-</div>
-</section>
+<div class="tm-section-wrap bg-white" style="margin-bottom: 160px;">
+<section class="row tm-section" data-aos="fade-left" data-aos-duration="3000" id="demo">
+<div class="col-12"><h2 class="tm-color-primary tm-section-title mb-4">Prueba por 30 días nuestros sistemas</h2><p class="mb-4">Requisitos Previos
+
+– Windows 7 o posterior (64 bits)</p><div class="row w-100 justify-content-center text-center"><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="popup-with-zoom-anim" data-mfp-src="#modal-sqlmonark" href="#modal-sqlmonark"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-download fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Instalar Monark + SQL Server</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="popup-with-zoom-anim" data-mfp-src="#modal-sqlpropio" href="#modal-sqlpropio"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-database fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Instalar mi propio SQL Server</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="popup-with-zoom-anim" data-mfp-src="#modal-yaintalado" href="#modal-yaintalado"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-server fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Tengo SQL Server ya instalado</h4></div></a></div><div class="col-xl-3 col-lg-4 col-md-6 mb-5"><a class="popup-with-zoom-anim" data-mfp-src="#modal-cliente" href="#modal-cliente"><div style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><i class="fa-solid fa-network-wired fa-3x d-block mb-3 tm-section-icon modulo-icono"></i><h4 class="tm-color-primary">Quiero instalar en una PC cliente</h4></div></a></div></div></div></section>
 </div>
 </main>
 </div>
@@ -261,12 +299,32 @@
 <script src="slick/slick.min.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script src="js/templatemo-scripts.js"></script>
-</main><a class="whatsapp-float" href="https://wa.me/5491162047690" target="_blank"><i class="fab fa-whatsapp"></i></a><div class="white-popup mfp-hide" id="modal-facturacion" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Facturación</h2><img alt="Facturación" class="img-fluid mb-3" src="img/modal/facturacion.jpg"/><p>Permite emitir comprobantes electrónicos con configuraciones múltiples y control sobre vencimientos e impuestos.</p></div><div class="white-popup mfp-hide" id="modal-reportes" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Balances y Reportes</h2><img alt="Balances y Reportes" class="img-fluid mb-3" src="img/modal/reportes.jpg"/><p>Generación de balances, reportes contables y financieros en tiempo real para una toma de decisiones efectiva.</p></div><div class="white-popup mfp-hide" id="modal-pos" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>POS (Punto de Venta)</h2><img alt="POS (Punto de Venta)" class="img-fluid mb-3" src="img/modal/pos.jpg"/><p>Sistema ágil para ventas en mostrador, con control de stock y caja.</p></div><div class="white-popup mfp-hide" id="modal-cuentas" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Cuentas Corrientes</h2><img alt="Cuentas Corrientes" class="img-fluid mb-3" src="img/modal/cuentas.jpg"/><p>Gestión integral de cuentas corrientes de clientes y proveedores con historial y alertas.</p></div><div class="white-popup mfp-hide" id="modal-tesoreria" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Tesorería</h2><img alt="Tesorería" class="img-fluid mb-3" src="img/modal/tesoreria.jpg"/><p>Administración de cobranzas, pagos, bancos y conciliaciones.</p></div><div class="white-popup mfp-hide" id="modal-compras" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Compras</h2><img alt="Compras" class="img-fluid mb-3" src="img/modal/compras.jpg"/><p>Ingreso y control de órdenes de compra, recepción y actualización de stock.</p></div><div class="white-popup mfp-hide" id="modal-produccion" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Producción</h2><img alt="Producción" class="img-fluid mb-3" src="img/modal/produccion.jpg"/><p>Planificación, seguimiento y control de órdenes de producción y materias primas.</p></div><div class="white-popup mfp-hide" id="modal-estadisticas" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Estadísticas</h2><img alt="Estadísticas" class="img-fluid mb-3" src="img/modal/estadisticas.jpg"/><p>Análisis visual de la información para medir desempeño y detectar oportunidades.</p></div><script>
+</main><a class="whatsapp-float" href="https://wa.me/5491162047690" target="_blank"><i class="fab fa-whatsapp"></i></a><div class="mfp-hide zoom-anim-dialog" id="modal-droguerias" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Droguerías</h2><img alt="Droguerías" class="img-fluid mb-3" src="img/modal/droguerias.jpg"/><p>• Circuito encadenado de Pedido – Remito – Factura<br/>• Factura electrónica automática<br/>• Trazabilidad, conexión con ANMAT<br/>• Stock individualizado<br/>• Actualización de productos desde bases Kairos<br/>• Gestión de entregas, Hojas de Ruta, Monitor para visualizar el estado de las entregas<br/>Sistema Web con registro de las farmacias<br/>Integración con Cuentas Corrientes, Bancos, Impuestos y Contabilidad<br/>Impresión de cheques, gestión de pago a proveedores, estadísticas de ventas<br/>Adaptación a los cambios propios del negocio<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-reportes" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Balances y Reportes</h2><img alt="Balances y Reportes" class="img-fluid mb-3" src="img/modal/reportes.jpg"/><p>Generación de balances, reportes contables y financieros en tiempo real para una toma de decisiones efectiva.<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-pos" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>POS (Punto de Venta)</h2><img alt="POS (Punto de Venta)" class="img-fluid mb-3" src="img/modal/pos.jpg"/><p>Sistema ágil para ventas en mostrador, con control de stock y caja.<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-cuentas" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Cuentas Corrientes</h2><img alt="Cuentas Corrientes" class="img-fluid mb-3" src="img/modal/cuentas.jpg"/><p>Gestión integral de cuentas corrientes de clientes y proveedores con historial y alertas.<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-franquicias" style="max-width:1000px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;display:flex;gap:30px;align-items:flex-start;flex-wrap:wrap;"><h2 style="width:100%">Franquicias y Sucursales</h2><img alt="Franquicias" class="img-fluid mb-3" src="img/modal/franquicias.jpg" style="max-width: 400px; width: 100%; flex: 1;"/><p style="flex:2;white-space:pre-line;margin:0;">Monark Centralizador<br/><br/>Ventas en locales y centralización de la información<br/>Gestión de venta al público con ticket fiscal<br/>Pantalla de venta rápida con lectora de código de barras<br/>Venta por unidades, peso o servicios<br/>Conexión con balanzas<br/>Control de Stock<br/>Cierre de Caja<br/>Administración de valores<br/>Cuentas Corrientes de deudores<br/>Estadísticas de ventas por hora o rango de fechas<br/><br/>Centralizador<br/><br/>Un sistema centralizador recibirá datos de cada sucursal. En este sistema, podrá ver la info completa o de las sucursales que usted seleccione. A cada usuario se le designan las sucursales con las que puede operar. Los datos se reciben por medio de archivos .xlm mediante cualquier conexión de Internet.<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-compras" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Compras</h2><img alt="Compras" class="img-fluid mb-3" src="img/modal/compras.jpg"/><p>Ingreso y control de órdenes de compra, recepción y actualización de stock.<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-produccion" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Producción</h2><img alt="Producción" class="img-fluid mb-3" src="img/modal/produccion.jpg"/><p>Planificación, seguimiento y control de órdenes de producción y materias primas.<br/></p></div><div class="mfp-hide zoom-anim-dialog" id="modal-estadisticas" style="max-width:600px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Estadísticas</h2><img alt="Estadísticas" class="img-fluid mb-3" src="img/modal/estadisticas.jpg"/><p>Análisis visual de la información para medir desempeño y detectar oportunidades.<br/></p></div><script>
 $(document).ready(function() {
-  $('.modulo-popup').magnificPopup({
+  $('.popup-with-zoom-anim').magnificPopup({
     type: 'inline',
-    midClick: true
+    fixedContentPos: false,
+    fixedBgPos: true,
+    overflowY: 'auto',
+    closeBtnInside: true,
+    preloader: false,
+    midClick: true,
+    removalDelay: 300,
+    mainClass: 'my-mfp-zoom-in'
   });
 });
-</script></body>
+</script><div class="mfp-hide zoom-anim-dialog" id="modal-sqlmonark" style="max-width:800px;margin:0 auto;padding:20px;background:#fff;border-radius:10px;"><h2>Instalar Monark + SQL Server</h2><img alt="Instalador" class="img-fluid mb-3" src="img/modal/sqlmonark.jpg"/><p>Este instalador incluye:
+- Monark ERP
+- SQL Server Express 2014
+- Framework .NET 4.8
+
+Uso recomendado:
+- Para instalaciones nuevas sin SQL Server
+
+Pasos:
+1. Descargar el instalador desde www.monark.com.ar
+2. Ejecutar como administrador
+3. Seguir las instrucciones para instalar Monark y SQL
+
+El sistema quedará instalado con una base de datos de ejemplo y listo para configurar.</p></div><script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script><script>AOS.init();</script></body>
 </html>

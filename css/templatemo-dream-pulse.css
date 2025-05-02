@@ -55,7 +55,7 @@ a {
   padding: 55px;
   margin-right: 0;
   margin-left: auto;
-  text-align: center;
+  text-align:center;
 }
 
 .tm-section-title {
@@ -474,7 +474,7 @@ figure.effect-bubba:hover p {
 }
 
 .tm-w-80 {
-
+  max-width: 80%;
 }
 
 .tm-flex-item-left {
