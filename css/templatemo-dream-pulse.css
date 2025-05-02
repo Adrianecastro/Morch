@@ -152,6 +152,7 @@ a {
   width: calc(100% - 400px);
   margin-left: auto;
   margin-right: 0;
+  margin-left: 420px;
 }
 
 .tm-main-nav > li > a {
