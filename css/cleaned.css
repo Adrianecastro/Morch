@@ -1,0 +1,162 @@
+
+@keyframes float-whatsapp {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+.whatsapp-float {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    font-size: 24px;
+    z-index: 999;
+    animation: float-whatsapp 2s infinite ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+.whatsapp-float:hover {
+    background-color: #128C7E;
+}
+.modulo-icono {
+    transition: transform 0.3s ease-in-out;
+}
+.modulo-icono:hover {
+    transform: scale(1.15);
+}
+
+/* Alinear íconos y títulos verticalmente */
+#Sistemas .row > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajuste del botón flotante de WhatsApp */
+.whatsapp-float {
+    width: 90px;
+    height: 90px;
+    padding: 18px;
+    border-radius: 50%;
+}
+.whatsapp-float i {
+    font-size: 34px;
+}
+
+/* Ajuste del ícono WhatsApp (reducción 10%) y visibilidad */
+.whatsapp-float {
+    width: 90px;
+    height: 90px;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.whatsapp-float i {
+    font-size: 57px;
+    display: inline-block;
+}
+
+/* Evitar subrayado en íconos de sistemas */
+.modulo-popup {
+    text-decoration: none !important;
+}
+
+/* Centrado correcto entre ícono y texto */
+.modulo-popup i {
+    display: block;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.modulo-popup h4 {
+    text-align: center;
+}
+
+/* Hacer que la sección de íconos ocupe 100% del ancho con distribución */
+#Sistemas .row {
+    width: 100% !important;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+
+/* Magnific Popup zoom animation */
+.my-mfp-zoom-in .zoom-anim-dialog {
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
+  transform: scale(0.8);
+}
+.my-mfp-zoom-in.mfp-ready .zoom-anim-dialog {
+  opacity: 1;
+  transform: scale(1);
+}
+.my-mfp-zoom-in.mfp-removing .zoom-anim-dialog {
+  transform: scale(0.8);
+  opacity: 0;
+}
+.zoom-anim-dialog {
+  position: relative;
+  margin: 0 auto;
+}
+
+
+.zoom-anim-dialog h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.zoom-anim-dialog p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+    margin-top: 0;
+    white-space: pre-line;
+}
+
+
+.zoom-anim-dialog h2 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #222;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+.zoom-anim-dialog p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: #444;
+    text-align: left;
+    margin-top: 0;
+}
+.zoom-anim-dialog p strong {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #000;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+
+#demo a:hover {
+    text-decoration: none !important;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
